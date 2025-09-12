@@ -1,0 +1,124 @@
+/* Navbar Base */
+.navbar {
+  width: 100%;
+  background: #022421;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  animation: slideDown 0.6s ease;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.nav-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.nav-logo span {
+  color: #00d1b2;
+}
+.nav-logo:hover {
+  color: #00d1b2;
+}
+
+/* Menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  transition: all 0.5s ease;
+}
+.nav-menu li {
+  margin-left: 30px;
+}
+.nav-menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.nav-menu li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #00d1b2;
+  transition: 0.3s ease;
+}
+.nav-menu li a:hover::after {
+  width: 100%;
+}
+.nav-menu li a:hover {
+  color: #00d1b2;
+}
+
+/* Button */
+.nav-btn {
+  padding: 8px 18px;
+  background: #00d1b2;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.nav-btn:hover {
+  background: #fff;
+  color: #00d1b2 !important;
+}
+
+/* Hamburger Icon */
+.nav-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+  .nav-icon {
+    display: block;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    flex-direction: column;
+    background: #022421;
+    width: 250px;
+    height: calc(100vh - 70px);
+    justify-content: center;
+    align-items: center;
+    transition: right 0.4s ease;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-menu li {
+    margin: 20px 0;
+  }
+}
