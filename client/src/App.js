@@ -2,6 +2,8 @@ import './App.css';
 // import { useState } from 'react';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
+
+import ServicesPage from './pages/service';
 // import LoginForm from "./components/login";
 
 
@@ -17,7 +19,7 @@ function App() {
   
    <Routes>
 
-    
+    <Route path='/service' element={<ServicesPage/>}/>
    
 
    </Routes>
