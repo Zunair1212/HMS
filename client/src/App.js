@@ -2,7 +2,7 @@ import './App.css';
 // import { useState } from 'react';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
-
+import Home from './pages/home';
 import ServicesPage from './pages/service';
 // import LoginForm from "./components/login";
 
@@ -18,8 +18,9 @@ function App() {
    <Navbar/>
   
    <Routes>
-
+    <Route path='/' element={<Home/>}/>
     <Route path='/service' element={<ServicesPage/>}/>
+    
    
 
    </Routes>
