@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa";
 import "./navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ onLoginClick }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -15,26 +14,26 @@ const Navbar = () => {
       <div className="nav-container">
         {/* Logo */}
         <Link to="/" className="nav-logo">
-          Home<span>Services</span>
+          My<span>Website</span>
         </Link>
 
-        {/* Hamburger Icon */}
-        <div className="nav-icon" onClick={toggleMenu}>
-          {menuOpen ? <FaTimes /> : <FaBars />}
-        </div>
-
-        {/* Nav Links */}
-        <ul className={menuOpen ? "nav-menu active" : "nav-menu"}>
-          <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
-          <li><Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link></li>
-          <li><Link to="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
-          <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
+        {/* Menu */}
+        <ul className={`nav-menu ${menuOpen ? "active" : ""}`}>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/services">Services</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
           <li>
-            <Link to="/login" className="nav-btn" onClick={() => setMenuOpen(false)}>
+            <button className="nav-btn" onClick={onLoginClick}>
               Login / Signup
-            </Link>
+            </button>
           </li>
         </ul>
+
+        {/* Hamburger */}
+        <div className="nav-icon" onClick={toggleMenu}>
+          <i className={menuOpen ? "fas fa-times" : "fas fa-bars"}></i>
+        </div>
       </div>
     </nav>
   );
