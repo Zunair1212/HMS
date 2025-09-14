@@ -80,10 +80,7 @@
   background: #00d1b2;
   border-radius: 20px;
   font-weight: 500;
-  color: #fff;
   transition: all 0.3s ease;
-  border: none;
-  cursor: pointer;
 }
 .nav-btn:hover {
   background: #fff;
