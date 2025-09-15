@@ -134,8 +134,8 @@ const Home = () => {
           </div>
           <div className="service-card" data-aos="zoom-in" data-aos-delay="400">
             <FaTools />
-            <h3>Furniture Assembly</h3>
-            <p>Expert assembly for all types of furniture at your home.</p>
+            <h3>Repairing</h3>
+            <p>Experts for all types of furniture at your home.</p>
             <button className="btn-primary" onClick={() => setShowForm(true)}>Book Now</button>
           </div>
         </div>

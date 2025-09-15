@@ -5,6 +5,7 @@ import Footer from './components/footer';
 import Home from './pages/home';
 import ServicesPage from './pages/service';
 // import LoginForm from "./components/login";
+import About from './pages/about';
 
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -19,7 +20,8 @@ function App() {
   
    <Routes>
     <Route path='/' element={<Home/>}/>
-    <Route path='/service' element={<ServicesPage/>}/>
+    <Route path='/service' element={<ServicesPage/>}/>\
+    <Route path='/about' element={<About/>}/>
     
    
 
