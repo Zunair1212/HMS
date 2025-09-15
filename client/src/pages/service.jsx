@@ -1,10 +1,10 @@
-
-
-import React from "react";
+import React, { useState } from "react";
 import SidebarWithServices from "../components/sidebarwithservices";
 import "./service.css";
 
 const ServicesPage = () => {
+  const [showForm, setShowForm] = useState(false);
+
   return (
     <div className="services-page">
       {/* Hero Section */}
@@ -17,11 +17,55 @@ const ServicesPage = () => {
 
       {/* Sidebar + Services */}
       <SidebarWithServices />
+
+      {/* Banner Section */}
+      <section className="services-banner">
+        <div className="banner-content">
+          <h2>Need a Professional Right Away?</h2>
+          <p>Book your trusted service provider in just a few clicks.</p>
+          <button onClick={() => setShowForm(true)} className="banner-btn">
+            Book a Service
+          </button>
+        </div>
+      </section>
+
+      {/* Form Modal */}
+      {showForm && (
+        <div className="modal-overlay" onClick={() => setShowForm(false)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <h3>Book a Service</h3>
+            <form className="service-form">
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+              
+              {/* Service Selection */}
+              <select required>
+                <option value="">Select a Service</option>
+                <option value="plumber">Plumber</option>
+                <option value="electrician">Electrician</option>
+                <option value="cleaner">Cleaner</option>
+                <option value="painter">Painter</option>
+                <option value="furniture">Furniture Assembly</option>
+                <option value="other">Other</option>
+              </select>
+
+              
+              <textarea placeholder="Additional Details" rows="3"></textarea>
+              <button type="submit" className="submit-btn">Submit</button>
+            </form>
+            <button className="close-btn" onClick={() => setShowForm(false)}>
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
 
 export default ServicesPage;
+
+
 
 
 

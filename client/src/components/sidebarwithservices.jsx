@@ -11,7 +11,6 @@ const SidebarWithServices = () => {
     "Cleaning",
     "TV and Electronics",
     "Assembly",
-    "General Handyman",
     "Plumbing",
     "Electrical",
     "Painting",
@@ -21,16 +20,21 @@ const SidebarWithServices = () => {
   ];
 
   const services = [
-    { id: 1, name: "Home Cleaning", category: "Cleaning", desc: "Full home deep clean", price: "PKR 2500", image: "/images/cleaning.jpg" },
-    { id: 2, name: "Furniture Assembly", category: "Assembly", desc: "Assemble furniture safely", price: "PKR 2000", image: "/images/furniture.jpg" },
-    { id: 3, name: "Handyman Service", category: "General Handyman", desc: "General home repair work", price: "PKR 1500", image: "/images/handyman.jpg" },
-    { id: 4, name: "TV Mounting", category: "TV and Electronics", desc: "Wall-mount your TV securely", price: "PKR 1800", image: "/images/tv.jpg" },
-    { id: 5, name: "Pipe Leakage Fix", category: "Plumbing", desc: "Fix broken pipes & taps", price: "PKR 1200", image: "/images/plumbing.jpg" },
-    { id: 6, name: "Switch Board Repair", category: "Electrical", desc: "Fix electrical wiring & boards", price: "PKR 900", image: "/images/electrical.jpg" },
-    { id: 7, name: "Wall Painting", category: "Painting", desc: "Professional painting service", price: "PKR 5000", image: "/images/painting.jpg" },
-    { id: 8, name: "Office Moving", category: "Moving", desc: "Relocate offices & furniture", price: "PKR 15000", image: "/images/moving.jpg" },
-    { id: 9, name: "Smart Home Setup", category: "Smart Home", desc: "Install smart devices", price: "PKR 7000", image: "/images/smarthome.jpg" },
-    { id: 10, name: "Window Blinds Setup", category: "Window Treatments", desc: "Install blinds & curtains", price: "PKR 2500", image: "/images/window.jpg" },
+    { id: 1, name: "Home Cleaning", category: "Cleaning", desc: "Full home deep clean", price: "PKR 2500", image: "home-cleaning.webp" },
+    { id: 2, name: "Washing Clothes", category: "Cleaning", desc: "Wash clothes", price: "PKR 1000", image: "home-cleaning2.jpg" },
+    { id: 3, name: "Kitchen Cleaning", category: "Cleaning", desc: "Kitchen Cleaning", price: "PKR 1000", image: "home-cleaning3.jpg" },
+    { id: 4, name: "Furniture Assembly", category: "Assembly", desc: "Assemble furniture safely", price: "PKR 2000", image: "/assembly.jpg" },
+    { id: 5, name: "Full Home Cleaning", category: "Popular", desc: "Full home deep clean", price: "PKR 3500", image: "home-cleaning1.jpg" },
+    { id: 6, name: "TV Mounting", category: "TV and Electronics", desc: "Wall-mount your TV securely", price: "PKR 1800", image: "tv.webp" },
+    { id: 7, name: "Pipe Leakage Fix", category: "Plumbing", desc: "Fix broken pipes & taps", price: "PKR 1200", image: "pipe.webp" },
+    { id: 8, name: "Switch Board Repair", category: "Electrical", desc: "Fix electrical wiring & boards", price: "PKR 900", image: "switxh.jpg" },
+    { id: 9, name: "Wall Painting", category: "Painting", desc: "Professional painting service", price: "PKR 5000", image: "painting.jpg" },
+    { id: 10, name: "Plumbing", category: "Popular", desc: "Professional plumbing service", price: "PKR 3000", image: "plumbing.jpg" },
+    { id: 11, name: "Office Moving", category: "Moving", desc: "Relocate offices & furniture", price: "PKR 15000", image: "moving.png" },
+    { id: 12, name: "Smart Home Setup", category: "Smart Home", desc: "Install smart devices", price: "PKR 7000", image: "setup.jpg" },
+    { id: 13, name: "Window Blinds Setup", category: "Window Treatments", desc: "Install blinds & curtains", price: "PKR 2500", image: "window.jpg" },
+    { id: 14, name: "Repairing", category: "TV and Electronics", desc: "Repairing all type of electronics ", price: "PKR 1800", image: "electronics1.jpg" },
+    { id: 15, name: "Painting", category: "Popular", desc: "All type of Painting", price: "PKR 1800", image: "painting-popular.jpg" },
   ];
 
   // 🟢 Filter logic
