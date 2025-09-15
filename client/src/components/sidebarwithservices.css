@@ -5,6 +5,7 @@
   padding: 20px;
   background: #fff;
   flex-wrap: wrap; /* allows wrapping for small screens */
+  align-items: flex-start;
 }
 
 /* Sidebar */
@@ -51,6 +52,7 @@
 /* Service Cards */
 .service-cards {
   flex: 1;
+  min-width: 260px; /* ensures cards don’t shrink too small */
 }
 
 .service-cards h2 {
@@ -65,13 +67,26 @@
 }
 
 /* ✅ Responsive Styles */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
+  .sidebar-container {
+    gap: 18px;
+  }
+  .sidebar {
+    width: 200px;
+  }
+}
+
+@media (max-width: 992px) {
   .sidebar-container {
     gap: 15px;
   }
   .sidebar {
-    width: 200px;
+    width: 180px;
     padding: 15px;
+  }
+  .cards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 14px;
   }
 }
 
@@ -88,7 +103,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .sidebar-container {
     padding: 15px;
   }

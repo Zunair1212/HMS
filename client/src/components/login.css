@@ -1,4 +1,7 @@
-Overlay background
+/* ========================== */
+/* LOGIN OVERLAY + FORM BASE */
+/* ========================== */
+
 .login-overlay {
   position: fixed;
   top: 0;
@@ -28,6 +31,7 @@ Overlay background
   box-shadow: 0 6px 20px rgba(0,0,0,0.4);
   animation: scaleUp 0.5s ease;
   color: #fff;
+  position: relative;
 }
 
 @keyframes scaleUp {
@@ -110,4 +114,68 @@ Overlay background
 }
 .close-btn:hover {
   color: #00d1b2;
+}
+
+/* ========================== */
+/* RESPONSIVE MEDIA QUERIES  */
+/* ========================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .login-form {
+    padding: 35px 25px;
+    max-width: 360px;
+  }
+  .login-form h2 {
+    font-size: 22px;
+  }
+  .login-form input,
+  .login-form button {
+    font-size: 14px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .login-form {
+    padding: 30px 20px;
+    max-width: 320px;
+  }
+  .login-form h2 {
+    font-size: 20px;
+  }
+  .login-form input,
+  .login-form button {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+  .close-btn {
+    top: 10px;
+    right: 15px;
+    font-size: 18px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .login-form {
+    padding: 25px 15px;
+    max-width: 280px;
+    border-radius: 12px;
+  }
+  .login-form h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .login-form input,
+  .login-form button {
+    font-size: 13px;
+    padding: 9px 10px;
+  }
+  .toggle-form {
+    font-size: 12px;
+  }
+  .close-btn {
+    font-size: 16px;
+  }
 }

@@ -28,7 +28,7 @@ const Footer = () => {
           <h4>Quick Links</h4>
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/services">Services</a></li>
+            <li><a href="/service">Services</a></li>
             <li><a href="/about">About Us</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
@@ -38,10 +38,10 @@ const Footer = () => {
         <div className="footer-col">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="/services/plumbing">Plumbing</a></li>
-            <li><a href="/services/electrical">Electrical</a></li>
-            <li><a href="/services/cleaning">Cleaning</a></li>
-            <li><a href="/services/painting">Painting</a></li>
+            <li><a href="/service">Plumbing</a></li>
+            <li><a href="/service">Electrical</a></li>
+            <li><a href="/service">Cleaning</a></li>
+            <li><a href="/service">Painting</a></li>
           </ul>
         </div>
 

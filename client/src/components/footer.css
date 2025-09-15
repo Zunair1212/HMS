@@ -96,3 +96,69 @@
   font-size: 14px;
   color: #aaa;
 }
+
+/* ========================= */
+/* RESPONSIVE MEDIA QUERIES */
+/* ========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 50px 15px 15px;
+  }
+  .footer-logo {
+    font-size: 24px;
+  }
+  .footer-about {
+    font-size: 13px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .footer-col h2, 
+  .footer-col h4 {
+    font-size: 18px;
+  }
+  .footer-about {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .social-icons a {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+  .footer-bottom {
+    font-size: 13px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .footer-col ul li a {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+  .social-icons {
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .footer-logo {
+    font-size: 22px;
+  }
+  .footer-about {
+    font-size: 12px;
+  }
+  .footer-bottom {
+    font-size: 12px;
+  }
+}

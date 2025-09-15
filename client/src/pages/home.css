@@ -32,6 +32,7 @@
   color: #fff;
   position: relative;
   z-index: 1;
+  max-width: 700px;
 }
 
 .hero h1 {
@@ -48,6 +49,7 @@
   display: flex;
   gap: 15px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .btn-primary {
@@ -385,21 +387,29 @@
 
 /* ===================== Responsive ===================== */
 @media (max-width: 992px) {
-  .service-card {
-    width: 45%;
-  }
+  .service-card { width: 45%; }
+  .hero h1 { font-size: 2.2rem; }
+  .hero p { font-size: 1rem; }
 }
 
 @media (max-width: 768px) {
   .hero h1 { font-size: 1.8rem; }
-  .hero p { font-size: 1rem; }
+  .hero p { font-size: 0.95rem; }
   .statistics { flex-direction: column; gap: 20px; }
   .steps { flex-direction: column; }
   .swiper-slide { text-align: center; }
   .service-card { width: 60%; }
 }
 
+@media (max-width: 576px) {
+  .hero .overlay { padding: 20px; }
+  .hero h1 { font-size: 1.5rem; }
+  .hero p { font-size: 0.9rem; }
+  .service-card { width: 80%; padding: 18px; }
+}
+
 @media (max-width: 480px) {
-  .service-card { width: 90%; padding: 20px; }
+  .service-card { width: 95%; padding: 16px; }
   .service-card svg { font-size: 2rem; }
+  .cta-buttons { flex-direction: column; gap: 10px; }
 }

@@ -14,10 +14,10 @@ const About = () => {
   const [showForm, setShowForm] = useState(false);
 
   const teamMembers = [
-    { name: "Sana Khan", role: "Founder & CEO", img: "https://i.pravatar.cc/150?img=5" },
-    { name: "Ali Raza", role: "Operations Manager", img: "https://i.pravatar.cc/150?img=6" },
-    { name: "Haseeb Butt", role: "Head Technician", img: "https://i.pravatar.cc/150?img=7" },
-    { name: "Ayesha Ahmed", role: "Customer Relations", img: "https://i.pravatar.cc/150?img=8" },
+    { name: "Sana Khan", role: "Founder & CEO", img: "abt1.jpg" },
+    { name: "Ali Raza", role: "Operations Manager", img: "abt2.jpg" },
+    { name: "Malik Areeba ", role: "Head Technician", img: "abt3.jpg" },
+    { name: "Hussain Khakwani", role: "Customer Relations", img: "abt4.jpg" },
   ];
 
   const timeline = [
